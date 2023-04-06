@@ -1,7 +1,6 @@
 import { useState } from 'react'
+import { reactMarkdown } from 'react-markdown'
 import './App.css'
-//import ReactMarkdown from 'react-markdown'
-import { marked } from 'marked'  //npm install marked
 
 //a heading element (H1 size), 
 //a sub heading element (H2 size), 
@@ -45,13 +44,15 @@ function App() {
     }}
       value={text}
       ></textarea>
-      <div id="preview">{text}</div>
+      <div
+      id="preview"
+      >< dangerouslySetInnerHTML=
+      {{__html: marked(text),
+      }}
+      ></div>
     </div>
+    
   );  
-
-  return (
-    <div dangerouslySetInnerHTML={{__html: text, setText}} />
-  );
 }
 
-export default App
+export default App;
