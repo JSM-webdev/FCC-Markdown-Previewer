@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { reactMarkdown } from 'react-markdown'
+import { ReactMarkdown } from 'react-markdown'
 import './App.css'
 
 //a heading element (H1 size), 
