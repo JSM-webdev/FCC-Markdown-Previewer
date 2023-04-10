@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import { ReactMarkdown } from 'react-markdown'
-import './App.css'
+import { useState } from 'react';
+import { ReactMarkdown } from 'react-markdown';
+import './App.css';
 
 //a heading element (H1 size), 
 //a sub heading element (H2 size), 
