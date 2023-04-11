@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ReactMarkdown } from 'react-markdown';
+import { marked } from 'marked'; 
 import './App.css';
 
 //a heading element (H1 size), 
@@ -46,9 +46,7 @@ function App() {
       ></textarea>
       <div
       id="preview"
-      >< dangerouslySetInnerHTML=
-      {{__html: marked(text),
-      }}
+      dangerouslySetInnerHTML={{__html: marked(text)}}
       ></div>
     </div>
     
